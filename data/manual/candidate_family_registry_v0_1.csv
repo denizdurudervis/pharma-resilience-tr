@@ -1,0 +1,15 @@
+family_id,family_name,clinical_context,eligibility_basis,evidence_source,route_form_stratum,n_candidate_active_ingredients,n_candidate_products,eligibility_status,exclusion_reason,reviewer_note
+FAM_STATINS,Statins,Hypercholesterolaemia and cardiovascular risk reduction,Candidate pharmacological class; clinical equivalence audit pending,ATC_C10AA_2026,,,,pending,,No packaging information inspected
+FAM_ARB,Angiotensin II receptor blockers,Hypertension,Candidate pharmacological class; indication-specific clinical audit pending,ATC_C09CA_2026,,,,pending,,No packaging information inspected
+FAM_SSRI,Selective serotonin reuptake inhibitors,Moderate-to-severe depressive disorder,WHO recommendation identifies multiple SSRI treatment options; product-universe audit pending,WHO_mhGAP_2023;ATC_N06AB_2026,,,,pending,,No packaging information inspected
+FAM_DOAC,Direct oral anticoagulants,Stroke prevention in non-valvular atrial fibrillation,Candidate therapeutic class; indication-specific clinical audit pending,ATC_B01AF/B01AE_2026,,,,pending,,No packaging information inspected
+FAM_DPP4,DPP-4 inhibitors,Type 2 diabetes mellitus,Candidate glucose-lowering class; clinical eligibility audit pending,ATC_A10BH_2026,,,,pending,,No packaging information inspected
+FAM_SGLT2,SGLT2 inhibitors,Type 2 diabetes mellitus,Candidate glucose-lowering class; clinical eligibility audit pending,ATC_A10BK_2026,,,,pending,,No packaging information inspected
+FAM_H1_ANTIHISTAMINE,Second-generation H1 antihistamines,Allergic rhinitis and urticaria,Candidate therapeutic class; indication-specific clinical audit pending,ATC_R06AE/R06AX_2026,,,,pending,,No packaging information inspected
+FAM_P2Y12,P2Y12 platelet inhibitors,Acute coronary syndrome and secondary prevention,Candidate antiplatelet alternatives; clinical-context audit pending,ATC_B01AC_2026,,,,pending,,No packaging information inspected
+FAM_TRIPTAN,Triptans,Acute migraine treatment,Candidate migraine-specific therapeutic class; clinical audit pending,ATC_N02CC_2026,,,,pending,,No packaging information inspected
+FAM_5HT3,5-HT3 receptor antagonists,Nausea and vomiting prevention/treatment,Candidate antiemetic class; indication-specific clinical audit pending,ATC_A04AA_2026,,,,pending,,No packaging information inspected
+FAM_ANTIPSYCHOTIC,Antipsychotic medicines,Schizophrenia spectrum psychotic disorders,Candidate therapeutic family; molecule and route eligibility audit pending,ATC_N05A_2026,,,,pending,,No packaging information inspected
+FAM_GLP1,GLP-1 receptor agonists,Type 2 diabetes mellitus,Candidate incretin therapeutic class; indication-specific audit pending,ATC_A10BJ_2026,,,,pending,,No packaging information inspected
+FAM_BISPHOSPHONATE,Bisphosphonates,Osteoporosis,Candidate antiresorptive therapeutic family; indication-specific audit pending,ATC_M05BA_2026,,,,pending,,No packaging information inspected
+FAM_BENZO_SEIZURE,Benzodiazepines for acute seizure treatment,Acute convulsive seizure/status epilepticus,Candidate indication-specific therapeutic alternatives; clinical audit pending,ATC_N05BA/N03AE_2026,,,,pending,,No packaging information inspected
