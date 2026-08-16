@@ -1,0 +1,10 @@
+[project]
+name = "pharma-resilience-tr"
+version = "0.1.0"
+description = "Robust pharmaceutical supply resilience under partial topology observability"
+requires-python = ">=3.11"
+dependencies = []
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

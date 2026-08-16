@@ -1,0 +1,25 @@
+{
+  "relation": [
+    "required",
+    "alternative",
+    "unknown"
+  ],
+  "resolution": [
+    "explicit",
+    "partial",
+    "ambiguous",
+    "absent"
+  ],
+  "site_list_exhaustiveness": [
+    "explicit_complete",
+    "explicitly_partial",
+    "single_record_only",
+    "unknown"
+  ],
+  "baseline_openness": {
+    "m_plus": 0,
+    "m_minus": 0
+  },
+  "width_gate_when_eta_undefined": 0.25,
+  "fuzzy_matches_require_manual_review": true
+}
