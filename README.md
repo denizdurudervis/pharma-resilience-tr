@@ -1,4 +1,4 @@
-﻿> **RESEARCH STATUS: PARKED — DATA-FEASIBILITY GATE PENDING**
+> **RESEARCH STATUS: PARKED — DATA-FEASIBILITY GATE PENDING**
 >
 > The implemented technical checkpoint is frozen and reproducible. The original
 > false-redundancy question is **not** considered scientifically resolved because

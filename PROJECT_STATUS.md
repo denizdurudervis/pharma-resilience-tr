@@ -1,89 +1,83 @@
-﻿# Project Status
+# Project Status
 
-> **STATUS: PARKED — DATA-FEASIBILITY GATE PENDING**
+> **STATUS: CLOSED — PUBLIC-DATA FEASIBILITY GATE FAILED**
 
 ## Original research question
 
-Do multiple licensed therapeutic alternatives represent genuinely independent
-pharmaceutical supply redundancy, or can apparently distinct products share
-hidden physical dependencies and therefore create false redundancy?
+Do multiple licensed therapeutic alternatives represent genuinely independent pharmaceutical supply redundancy, or can apparently distinct products share hidden physical dependencies and therefore create false redundancy?
 
-The intended research logic was:
+The intended chain was:
 
-therapeutic alternatives -> hidden shared dependencies -> effective redundancy
--> shock vulnerability / supply resilience.
+`therapeutic alternatives -> hidden shared dependencies -> effective redundancy -> shock vulnerability / supply resilience`
 
-## What has been completed
+## What was completed
 
-The repository contains a reproducible methodological and software checkpoint
-for:
+The repository preserves a reproducible methodological/software checkpoint covering:
 
 - deterministic product-universe and clinical-family construction;
 - pharmaceutical-form reconciliation;
-- pilot analyses of parenteral PPI products;
-- component / packaging representation at multiple canonical resolutions;
+- parenteral PPI proof-of-concept work;
+- component / packaging representations at multiple resolutions;
 - partial-observability and site-resolution logic;
 - evidence-sensitive versus resolution-sensitive overlap classifications;
 - Stage-2 packaging schema and inference protocol;
-- automated tests for the implemented checkpoint.
+- deterministic POC outputs;
+- automated testing and clean-clone reproducibility.
 
-At the parked checkpoint, the full test suite passes:
+Clean-clone freeze audit:
 
 **157 passed**
 
-The deterministic POC summary is generated from:
+## Why the research line is now closed
 
-- `data/manual/product_audit_v0_1.csv`
-- `data/manual/component_audit_v0_1.csv`
+The final `5 target molecules + 1 positive control` GTİP/upstream-data feasibility gate was completed on 2026-10-08.
 
-using:
+Targets:
+- famotidine;
+- omeprazole;
+- pantoprazole;
+- esomeprazole;
+- dapagliflozin.
 
-`python -m pharma_resilience.poc_results_summary data/manual/product_audit_v0_1.csv data/manual/component_audit_v0_1.csv --json-out data/processed/poc_results_summary_v0_1.json --md-out data/processed/poc_results_summary_v0_1.md`
+Positive control:
+- o-acetylsalicylic acid.
 
-## Why the project is parked
+Result:
 
-The original scientific question requires evidence about whether apparently
-alternative products actually depend on independent upstream supply routes.
+- **5 / 5 project targets failed molecule-level public GTİP resolution.**
+- The positive control passed.
 
-The tested public regulatory sources can document product attributes,
-pharmaceutical form, packaging/component descriptions and some facility
-information, but they do not establish supplier/site independence at the
-resolution required for the original false-redundancy inference.
+The relevant target APIs map to broad residual chemical classes that contain multiple unrelated substances and/or have unstable mappings across salt/form/declaration contexts. Public aggregate GTİP trade statistics therefore cannot isolate the target molecule well enough to support upstream supplier-concentration or false-redundancy inference.
 
-In particular:
+See:
 
-- different KÜB wording does not necessarily imply different physical supply
-  components;
-- different packaging signatures do not prove independent suppliers;
-- facility names in public documents do not necessarily establish exhaustive
-  manufacturing roles or independent production routes;
-- absence of a documented shared dependency is not evidence of operational
-  redundancy.
+`docs/PHARMA_GTIP_FEASIBILITY_GATE_FINAL_2026-10-08.md`
 
-Therefore the current packaging/KÜB layer is retained as exploratory
-methodological work, not as proof of independent pharmaceutical supply routes.
+## Scientific boundary
 
-## What is NOT claimed
+This closure does **not** mean pharmaceutical supply resilience is unimportant or that false redundancy does not exist.
 
-This repository does not claim that:
+It means the original question is not identifiable at the required resolution using the tested **public-data-only** design.
 
-- packaging diversity equals supplier diversity;
-- different licensed products imply independent supply redundancy;
-- a documented site is the unique or exhaustive manufacturing site;
-- the current POC quantifies real national pharmaceutical shortage risk;
-- the original false-redundancy research question has been scientifically
-  resolved.
+Packaging diversity, documented facility names and broad GTİP classes must not be treated as proof of independent upstream supply paths.
 
-## Next research gate — only if this line is reopened
+## Final decision
 
-The sole next gate is:
+No further work is required on the current pharma line.
 
-**5 target molecules + 1 positive control -> GTİP / upstream-data resolution test**
+Do not restart:
+- large-scale KÜB collection;
+- new clinical-family expansion;
+- packaging canonicalisation;
+- GTİP scraping;
+- supply-network modelling based on these public aggregates.
 
-No large-scale KÜB collection, new clinical-family expansion, or additional
-packaging infrastructure should be started before that gate demonstrates that
-upstream dependency information can actually be resolved at a scientifically
-useful level.
+A future reopening would require a materially different data source capable of identifying molecule-specific upstream supplier/API/manufacturing relationships. That would constitute a new research project.
 
-If that gate fails, the appropriate decision is stop or pivot rather than
-expanding the existing packaging dataset.
+## Final technical state
+
+- repository checkpoint: frozen;
+- clean clone: validated;
+- test suite: **157 passed**;
+- public-data GTİP feasibility gate: **FAILED**;
+- research status: **CLOSED**.
