@@ -1,18 +1,24 @@
-# Pharmaceutical Resilience under Partial Observability — Türkiye
+﻿> **RESEARCH STATUS: PARKED — DATA-FEASIBILITY GATE PENDING**
+>
+> The implemented technical checkpoint is frozen and reproducible. The original
+> false-redundancy question is **not** considered scientifically resolved because
+> the tested public-data route does not establish independent upstream supply
+> paths. See [`PROJECT_STATUS.md`](PROJECT_STATUS.md).
+# Pharmaceutical Resilience under Partial Observability â€” TÃ¼rkiye
 
-Research codebase for a staged study of pharmaceutical supply resilience in Türkiye.
+Research codebase for a staged study of pharmaceutical supply resilience in TÃ¼rkiye.
 
 ## Core question
 
 How should inventory and diversification decisions be made when:
-1. macroeconomic production links are observed only at coarse input–output resolution;
+1. macroeconomic production links are observed only at coarse inputâ€“output resolution;
 2. product-level routes are observable from public regulatory documents;
 3. physical manufacturing topology (site roles, AND/OR relations, exhaustiveness) is only partially observed?
 
 ## v0.1 scope
 
 This version does **not** claim to estimate the true physical supply network.
-It first runs a 5–10 product data-access audit.
+It first runs a 5â€“10 product data-access audit.
 
 The audit decides whether the site/topology arm is identifiable enough to justify a larger optimization model.
 
@@ -34,21 +40,22 @@ Populate:
 - `templates/product_audit.csv`
 - `templates/evidence_audit.csv`
 
-for 5–10 products.
+for 5â€“10 products.
 
 Then compute field observability and topology-width diagnostics before scaling up.
 
 ## Repository layout
 
-- `src/pharma_resilience/filters.py` — text normalization and fuzzy-review flags
-- `src/pharma_resilience/mah.py` — MAH descriptive resilience statistics
-- `src/pharma_resilience/route_robustness.py` — exact random/targeted route-retention curves
-- `src/pharma_resilience/audit.py` — document-field completeness metrics
-- `src/pharma_resilience/topology.py` — topology-bound scaffolding
-- `src/pharma_resilience/io_bridge.py` — explicit interface to the frozen A64 engine
-- `templates/` — manual audit tables
-- `docs/protocol_v0.1.md` — frozen pre-analysis protocol
+- `src/pharma_resilience/filters.py` â€” text normalization and fuzzy-review flags
+- `src/pharma_resilience/mah.py` â€” MAH descriptive resilience statistics
+- `src/pharma_resilience/route_robustness.py` â€” exact random/targeted route-retention curves
+- `src/pharma_resilience/audit.py` â€” document-field completeness metrics
+- `src/pharma_resilience/topology.py` â€” topology-bound scaffolding
+- `src/pharma_resilience/io_bridge.py` â€” explicit interface to the frozen A64 engine
+- `templates/` â€” manual audit tables
+- `docs/protocol_v0.1.md` â€” frozen pre-analysis protocol
 
 ## Status
 
 Design frozen; empirical audit is the next gate.
+

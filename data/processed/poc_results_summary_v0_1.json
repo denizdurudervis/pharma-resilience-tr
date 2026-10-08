@@ -1,0 +1,275 @@
+{
+  "schema_version": "poc_results_summary_v0_1",
+  "dataset": {
+    "n_audit_rows": 19,
+    "n_products": 9,
+    "n_explicit_component_observations": 18,
+    "n_unresolved_products": 1,
+    "unresolved_product_ids": [
+      "OMHEAL_2025_605"
+    ],
+    "n_exact_component_classes": 9,
+    "n_unique_product_component_edges": 17
+  },
+  "ingredients": [
+    "esomeprazol",
+    "famotidin",
+    "omeprazol",
+    "pantoprazol"
+  ],
+  "resolution_summary": {
+    "R0_exact": {
+      "n_component_classes": 9,
+      "n_product_component_edges": 17,
+      "n_cross_ingredient_classes": 3,
+      "mean_documented_overlap_score": 0.666666,
+      "mean_componentwise_unresolved_envelope_score": 1.388889
+    },
+    "R1_parent": {
+      "n_component_classes": 6,
+      "n_product_component_edges": 17,
+      "n_cross_ingredient_classes": 4,
+      "mean_documented_overlap_score": 0.916666,
+      "mean_componentwise_unresolved_envelope_score": 1.416667
+    },
+    "R2_terminal": {
+      "n_component_classes": 5,
+      "n_product_component_edges": 17,
+      "n_cross_ingredient_classes": 3,
+      "mean_documented_overlap_score": 1.0,
+      "mean_componentwise_unresolved_envelope_score": 1.416667
+    }
+  },
+  "pair_trajectories": [
+    {
+      "ingredient_a": "esomeprazol",
+      "ingredient_b": "famotidin",
+      "levels": {
+        "R0_exact": {
+          "existential_shared_component_count": 1,
+          "documented_overlap_score": 0.333333,
+          "componentwise_unresolved_envelope_score": 0.333333,
+          "envelope_increment": 0.0
+        },
+        "R1_parent": {
+          "existential_shared_component_count": 1,
+          "documented_overlap_score": 0.333333,
+          "componentwise_unresolved_envelope_score": 0.333333,
+          "envelope_increment": 0.0
+        },
+        "R2_terminal": {
+          "existential_shared_component_count": 1,
+          "documented_overlap_score": 0.333333,
+          "componentwise_unresolved_envelope_score": 0.333333,
+          "envelope_increment": 0.0
+        }
+      },
+      "documented_resolution_range": 0.0,
+      "resolution_sensitive": false,
+      "max_envelope_increment": 0.0,
+      "unresolved_evidence_sensitive": false
+    },
+    {
+      "ingredient_a": "esomeprazol",
+      "ingredient_b": "omeprazol",
+      "levels": {
+        "R0_exact": {
+          "existential_shared_component_count": 1,
+          "documented_overlap_score": 0.5,
+          "componentwise_unresolved_envelope_score": 2.0,
+          "envelope_increment": 1.5
+        },
+        "R1_parent": {
+          "existential_shared_component_count": 2,
+          "documented_overlap_score": 1.0,
+          "componentwise_unresolved_envelope_score": 2.0,
+          "envelope_increment": 1.0
+        },
+        "R2_terminal": {
+          "existential_shared_component_count": 3,
+          "documented_overlap_score": 1.5,
+          "componentwise_unresolved_envelope_score": 2.0,
+          "envelope_increment": 0.5
+        }
+      },
+      "documented_resolution_range": 1.0,
+      "resolution_sensitive": true,
+      "max_envelope_increment": 1.5,
+      "unresolved_evidence_sensitive": true
+    },
+    {
+      "ingredient_a": "esomeprazol",
+      "ingredient_b": "pantoprazol",
+      "levels": {
+        "R0_exact": {
+          "existential_shared_component_count": 2,
+          "documented_overlap_score": 1.5,
+          "componentwise_unresolved_envelope_score": 1.5,
+          "envelope_increment": 0.0
+        },
+        "R1_parent": {
+          "existential_shared_component_count": 3,
+          "documented_overlap_score": 2.0,
+          "componentwise_unresolved_envelope_score": 2.0,
+          "envelope_increment": 0.0
+        },
+        "R2_terminal": {
+          "existential_shared_component_count": 3,
+          "documented_overlap_score": 2.0,
+          "componentwise_unresolved_envelope_score": 2.0,
+          "envelope_increment": 0.0
+        }
+      },
+      "documented_resolution_range": 0.5,
+      "resolution_sensitive": true,
+      "max_envelope_increment": 0.0,
+      "unresolved_evidence_sensitive": false
+    },
+    {
+      "ingredient_a": "famotidin",
+      "ingredient_b": "omeprazol",
+      "levels": {
+        "R0_exact": {
+          "existential_shared_component_count": 1,
+          "documented_overlap_score": 0.333333,
+          "componentwise_unresolved_envelope_score": 1.166666,
+          "envelope_increment": 0.833333
+        },
+        "R1_parent": {
+          "existential_shared_component_count": 1,
+          "documented_overlap_score": 0.333333,
+          "componentwise_unresolved_envelope_score": 0.833333,
+          "envelope_increment": 0.5
+        },
+        "R2_terminal": {
+          "existential_shared_component_count": 1,
+          "documented_overlap_score": 0.333333,
+          "componentwise_unresolved_envelope_score": 0.833333,
+          "envelope_increment": 0.5
+        }
+      },
+      "documented_resolution_range": 0.0,
+      "resolution_sensitive": false,
+      "max_envelope_increment": 0.833333,
+      "unresolved_evidence_sensitive": true
+    },
+    {
+      "ingredient_a": "famotidin",
+      "ingredient_b": "pantoprazol",
+      "levels": {
+        "R0_exact": {
+          "existential_shared_component_count": 1,
+          "documented_overlap_score": 0.333333,
+          "componentwise_unresolved_envelope_score": 0.333333,
+          "envelope_increment": 0.0
+        },
+        "R1_parent": {
+          "existential_shared_component_count": 1,
+          "documented_overlap_score": 0.333333,
+          "componentwise_unresolved_envelope_score": 0.333333,
+          "envelope_increment": 0.0
+        },
+        "R2_terminal": {
+          "existential_shared_component_count": 1,
+          "documented_overlap_score": 0.333333,
+          "componentwise_unresolved_envelope_score": 0.333333,
+          "envelope_increment": 0.0
+        }
+      },
+      "documented_resolution_range": 0.0,
+      "resolution_sensitive": false,
+      "max_envelope_increment": 0.0,
+      "unresolved_evidence_sensitive": false
+    },
+    {
+      "ingredient_a": "omeprazol",
+      "ingredient_b": "pantoprazol",
+      "levels": {
+        "R0_exact": {
+          "existential_shared_component_count": 2,
+          "documented_overlap_score": 1.0,
+          "componentwise_unresolved_envelope_score": 3.0,
+          "envelope_increment": 2.0
+        },
+        "R1_parent": {
+          "existential_shared_component_count": 3,
+          "documented_overlap_score": 1.5,
+          "componentwise_unresolved_envelope_score": 3.0,
+          "envelope_increment": 1.5
+        },
+        "R2_terminal": {
+          "existential_shared_component_count": 3,
+          "documented_overlap_score": 1.5,
+          "componentwise_unresolved_envelope_score": 3.0,
+          "envelope_increment": 1.5
+        }
+      },
+      "documented_resolution_range": 0.5,
+      "resolution_sensitive": true,
+      "max_envelope_increment": 2.0,
+      "unresolved_evidence_sensitive": true
+    }
+  ],
+  "classification": {
+    "n_pairs": 6,
+    "n_resolution_sensitive_pairs": 3,
+    "resolution_sensitive_pairs": [
+      [
+        "esomeprazol",
+        "omeprazol"
+      ],
+      [
+        "esomeprazol",
+        "pantoprazol"
+      ],
+      [
+        "omeprazol",
+        "pantoprazol"
+      ]
+    ],
+    "n_unresolved_evidence_sensitive_pairs": 3,
+    "unresolved_evidence_sensitive_pairs": [
+      [
+        "esomeprazol",
+        "omeprazol"
+      ],
+      [
+        "famotidin",
+        "omeprazol"
+      ],
+      [
+        "omeprazol",
+        "pantoprazol"
+      ]
+    ],
+    "n_unresolved_evidence_insensitive_pairs": 3,
+    "unresolved_evidence_insensitive_pairs": [
+      [
+        "esomeprazol",
+        "famotidin"
+      ],
+      [
+        "esomeprazol",
+        "pantoprazol"
+      ],
+      [
+        "famotidin",
+        "pantoprazol"
+      ]
+    ]
+  },
+  "strongest_terminal_documented_overlap": {
+    "score": 2.0,
+    "pairs": [
+      [
+        "esomeprazol",
+        "pantoprazol"
+      ]
+    ]
+  },
+  "interpretation": {
+    "resolution_sensitive": "Documented overlap changes across R0, R1 and R2.",
+    "unresolved_evidence_sensitive": "At least one resolution level has a positive componentwise unresolved sensitivity-envelope increment.",
+    "warning": "Unresolved-evidence sensitivity is not physical supply-chain fragility. The componentwise envelope is not a jointly feasible physical upper bound."
+  }
+}
